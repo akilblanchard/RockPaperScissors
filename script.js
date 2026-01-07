@@ -15,6 +15,11 @@ const choiceImages = {
     scissors: "images/scissors.svg"
 }
 
+const defaultImage = {
+    default: "images/default.svg"
+}
+
+
 //cache images
 const playerChoiceImg = document.getElementById("playerChoiceImg");
 
@@ -104,6 +109,9 @@ function playAgain() {
   gameEnded = false;
   humanScore = 0;
   computerScore = 0;
+
+playerChoiceImg.src = defaultImage;
+computerChoiceImg.src = defaultImage;
 
   // reset scores on screen
   updateScore();
