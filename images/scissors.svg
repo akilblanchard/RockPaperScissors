@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-label="Scissors - Peace Sign">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d73e90"/>
+      <stop offset="1" stop-color="#d73e90"/>
+    </linearGradient>
+  </defs>
+
+  <!-- neon ring -->
+  <circle cx="128" cy="128" r="92"
+          stroke="url(#pink)"
+          stroke-width="10"
+          filter="url(#glow)" />
+
+  <!-- squid-game circle -->
+  <circle cx="128" cy="128" r="64"
+          stroke="#d73e90"
+          stroke-width="12"
+          opacity="0.95"/>
+
+  <!-- PEACE SIGN HAND -->
+  <g>
+    <!-- palm -->
+    <path d="M96 132
+             C96 110 110 98 128 98
+             C146 98 160 110 160 132
+             V158
+             C160 182 144 200 128 200
+             C112 200 96 182 96 158
+             Z"
+          fill="#0B0B0F"
+          stroke="#d73e90"
+          stroke-width="6"/>
+
+    <!-- index finger -->
+    <rect x="114" y="48"
+          width="18"
+          height="92"
+          rx="9"
+          fill="#0B0B0F"
+          stroke="#d73e90"
+          stroke-width="6"/>
+
+    <!-- middle finger (slightly angled outward) -->
+    <rect x="142" y="52"
+          width="18"
+          height="88"
+          rx="9"
+          transform="rotate(6 142 52)"
+          fill="#0B0B0F"
+          stroke="#d73e90"
+          stroke-width="6"/>
+
+    <!-- folded fingers -->
+    <path d="M104 138
+             C110 126 124 124 136 128"
+          stroke="#2A2A35"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity="0.85"/>
+
+    <path d="M104 152
+             C110 142 126 140 140 144"
+          stroke="#2A2A35"
+          stroke-width="6"
+          stroke-linecap="round"
+          opacity="0.85"/>
+
+    <!-- thumb -->
+    <path d="M94 154
+             C80 156 76 168 84 178
+             C94 190 114 182 116 170
+             C118 160 110 152 100 150"
+          fill="#0B0B0F"
+          stroke="#d73e90"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <!-- wrist cuff -->
+    <rect x="96" y="190"
+          width="64"
+          height="24"
+          rx="10"
+          fill="#111118"
+          stroke="#d73e90"
+          stroke-width="6"/>
+  </g>
+</svg>

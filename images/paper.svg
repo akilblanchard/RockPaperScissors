@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none" role="img" aria-label="Paper">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d73e90"/>
+      <stop offset="1" stop-color="#d73e90"/>
+    </linearGradient>
+  </defs>
+
+  <!-- neon ring -->
+  <circle cx="128" cy="128" r="92" stroke="url(#pink)" stroke-width="10" filter="url(#glow)"/>
+
+  <!-- squid-game square behind -->
+  <rect x="62" y="66" width="132" height="132" rx="10" stroke="#d73e90" stroke-width="12" opacity="0.95"/>
+
+  <!-- open hand (paper) -->
+  <g transform="translate(0,0)">
+    <!-- palm -->
+    <path d="M92 120
+             C92 104 104 92 120 92
+             H136
+             C152 92 164 104 164 120
+             V166
+             C164 186 148 202 128 202
+             C108 202 92 186 92 166
+             Z"
+          fill="#0B0B0F" stroke="#FF5BC0" stroke-width="6"/>
+
+    <!-- fingers -->
+    <rect x="92" y="76" width="18" height="64" rx="9" fill="#0B0B0F" stroke="#d73e90" stroke-width="6"/>
+    <rect x="110" y="72" width="18" height="72" rx="9" fill="#0B0B0F" stroke="#d73e90"  stroke-width="6"/>
+    <rect x="128" y="72" width="18" height="72" rx="9" fill="#0B0B0F" stroke="#d73e90" stroke-width="6"/>
+    <rect x="146" y="76" width="18" height="64" rx="9" fill="#0B0B0F" stroke="#d73e90"  stroke-width="6"/>
+
+    <!-- thumb -->
+    <path d="M92 136
+             C78 138 72 150 76 160
+             C82 174 98 174 104 166
+             C108 160 106 150 100 146
+             C98 144 95 142 92 142"
+          fill="#0B0B0F" stroke="#d73e90" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- wrist cuff -->
+    <rect x="96" y="190" width="64" height="24" rx="10" fill="#111118" stroke="#d73e90"  stroke-width="6"/>
+  </g>
+</svg>

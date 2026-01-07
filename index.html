@@ -3,10 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+     <script src="script.js" defer></script>
+    <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    
+    <header>
+        <div class ="logo">
+            <img src ="images/pngimg.com - squid_game_PNG37.png" alt="squid games logo"/>
+        </div>
+        <div class="banner">
+            <img src ="images/final_game.png" alt="final game banner"/>
+        </div>
+    </header>
+    <main>
+        <div class ="intro">
+            <h3>
+            The game is rock, paper, scissors.<br>
+            Win, and you advance. Lose… and your game ends here.<br>
+        </div>
+        
+        <div class ="game-container">
+
+
+            <div class ="game">
+            <div class ="hands">
+                <div class ="hand">
+                    <img id = "playerChoiceImg" alt="player choice image">
+                </div>
+
+                <div class ="hand">
+                    <img id = "computerChoiceImg" alt="computer choice image">
+                </div>
+            </div>
+                <div class = score>
+                    <div id="humanScore" class="humanScore">0</div>
+                    <div id="computerScore">0</div>
+                </div>
+
+                <div class = "controls" id="gameControls">
+                    <button class ="btn" id="rockBtn">Rock</button>
+                    <button class ="btn" id="paperBtn">Paper</button>
+                    <button class ="btn" id="scissorsBtn">Scissors</button>
+                </div>
+
+                <button class ="btn" id="againBtn">Play Again</button>
+            </div>
+            <div id = "result"></div>
+
+        </div>
+
+
+
+
+
+        <div class ="minions">
+            <img src="images/soldiers.png">
+        </div>
+
+    </main>
 </body>
 </html>
