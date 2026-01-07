@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* ---------- CSS RESET ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter';
+}
+/* ---------- NORMAL STYLES ---------- */
+
+body{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4b4b4b, #2c2e2f, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2a2a2a, #2f2f2f, #232323); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 160px;
+  height: auto;
+}
+
+.banner img{
+  padding-right: 15px;
+  width: 290px;
+  height: auto;
+}
+
+main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  padding-top:20px; 
+}
+
+.intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 70px;
+}
+
+.game-container{
+  color: rgb(243, 79, 106);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 110px;
+  
+}
+
+.game{
+
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.controls{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.score{
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+}
+
+.hands{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 500px;
+  margin-bottom: 20px;
+}
+.hand img{
+  height: 60px;
+  width: auto;
+}
+
+.btn{
+  background-color: #d73e90 ;
+  height: 40px;
+  color: white;
+  width: 130px;
+  margin: 35px 20px 10px 20px;
+  border: none;
+}
+
+#againBtn {
+  display: none;
+}
+
+.minions img{
+  position: absolute;
+  width:  300px;
+  height: auto;
+  top: 670px;
+  left: -18px;
+}

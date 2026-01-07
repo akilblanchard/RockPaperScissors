@@ -15,17 +15,15 @@ const choiceImages = {
     scissors: "images/scissors.svg"
 }
 
+const defaultImage = {
+    default: "images/default.svg"
+}
 
 
 //cache images
 const playerChoiceImg = document.getElementById("playerChoiceImg");
 
 const computerChoiceImg = document.getElementById("computerChoiceImg");
-
-const defaultImage = "images/rock.svg";
-
-playerChoiceImg.src = defaultImage
-computerChoiceImg.src = defaultImage;
 
 // buttons
 rockBtn.addEventListener("click", ()=> {
@@ -63,6 +61,7 @@ function updateScore(){
 
 // gameplay
 function playRound() {
+
     const computerChoice = getComputerChoice();
     playerChoiceImg.src = choiceImages[humanChoice];
     computerChoiceImg.src = choiceImages[computerChoice];
@@ -88,6 +87,8 @@ function endGame(){
         gameOver = true;
         document.getElementById("gameControls").style.display = "none";
         againBtn.style.display = "block";
+
+
         showWinner();
     }
 }
@@ -110,14 +111,18 @@ function playAgain() {
   humanScore = 0;
   computerScore = 0;
 
-  playerChoiceImg.src = defaultImage
-  computerChoiceImg.src = defaultImage;
+playerChoiceImg.src = defaultImage;
+computerChoiceImg.src = defaultImage;
 
   // reset scores on screen
   updateScore();
 
   // reset winner text
   winner.textContent = "";
+
+  // reset images (optional)
+  playerChoiceImg.src = "";
+  computerChoiceImg.src = "";
 
   // show game controls again
   document.getElementById("gameControls").style.display = "flex";
